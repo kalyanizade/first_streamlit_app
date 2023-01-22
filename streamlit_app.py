@@ -48,11 +48,11 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import requests
-#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 
 #take the json version of the response and normalize it
-#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-#streamlit.dataframe(fruityvice_normalized)
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+streamlit.dataframe(fruityvice_normalized)
 
 
 #New section to display fruitvice API response
