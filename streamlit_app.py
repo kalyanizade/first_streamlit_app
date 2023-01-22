@@ -36,7 +36,7 @@ streamlit.dataframe(fruits_to_show)
 
 #New section to display fruitvice API response
 
-#streamlit.header("Fruityvice Fruit Advice!")
+streamlit.header("Fruityvice Fruit Advice!")
 
 
 import requests
