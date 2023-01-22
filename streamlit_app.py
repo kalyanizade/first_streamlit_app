@@ -56,9 +56,9 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 #New section to display fruitvice API response
-streamlit.header("Fruityvice Fruit Advice!")
+#streamlit.header("Fruityvice Fruit Advice!")
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like information about?')
 streamlit.write('The user entered ', fruit_choice)
 
 import requests
