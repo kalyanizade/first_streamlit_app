@@ -85,9 +85,9 @@ my_cur = my_cnx.cursor()
 
 
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-my_data_row = my_cur.fetchone()
+my_data_rows = my_cur.fetchall()
 
-streamlit.text("The fruit load list contain:")
-streamlit.text(my_data_row)
+streamlit.header("The fruit load list contain:")
+streamlit.dataframe(my_data_rows)
 
   
